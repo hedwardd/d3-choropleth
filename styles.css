@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  min-width: 960px;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-type: x mandatory;
+}
+
+#headers {
+  max-width: 280px;
+  scroll-snap-align: center;
+}
+
+@media (min-width: 425px) {
+  #headers {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  #headers {
+    max-width: 100%;
+  }
+}
+
+#title {
+  text-align: center;
+}
+
+#description {
+  text-align: center;
+}
+
+#canvas {
+  display: flex;
+}
+
+#legend {
+  font-size: 12px;
+}
+
+.county:hover {
+  stroke: black;
+  stroke-width: 2px;
+}
+
+.states {
+  fill: none;
+  stroke: #fff;
+  stroke-linejoin: round;
+}
+
+#tooltip {
+  display: flex;
+  position: absolute;
+  text-align: center;
+  padding: 2px 4px;
+  background: white;
+  border: 1px solid;
+  border-radius: 2px;
+}
